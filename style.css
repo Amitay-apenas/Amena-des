@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url(fonts/Caveat-VariableFont_wght.ttf)format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    /*
+    tipos de format: 
+        -opentype (otf)
+        -truetype(ttf)
+        -embedded-opentype
+        -truetype-aat(Advanced Apple Typograhpy)
+        -svg
+
+    */
+}
+body {
+    position: relative;
+    color: #fff;
+    background-image: url(./imagens/mobileBackground.jpg);
+    background-repeat: no-repeatt;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+@media(min-width: 700px){
+    img{
+        margin-left: 45%;
+        width: 150px;
+        height: 150px;
+    }
+}
+h1, footer{
+    color: #dfc911;
+    font-family: 'Caveat';
+    padding: 0;
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+}
+@media(min-width: 700px){
+    h1{
+        color: #dfc911;
+
+        margin-top: 0;
+        padding-left: 40px;
+
+        font-family: "Caveat";
+        font-size: 100px;
+
+        position: absolute;
+        top: 50%;
+
+        transform: translate(0, -50%);
+    }
+    body{
+        background-image: url(./imagens/pcBackground.jpg);
+        background-repeat: no-repeat;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+.cabecalho {
+    background-image: linear-gradient(#BB31D8, #CEA9D6);
+    position: relative;
+}
+a {
+    color: #dfc911;
+}
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+nav a {
+    font-size: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.principal_menu {
+    background-color: rgba(197,121,255, 0.4);
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.parchment{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 18px;
+}
+p {
+    font-family: 'Caveat';
+    position: absolute;
+    top: 41%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 150%;
+    
+}
+@media(max-width: 320px){
+    p{
+        font-size:127%;
+    }
+}
+#closedParch {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.poema {
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.poema_texto{
+    width: 320%;
+    position: absolute;
+    font-size: 130%;
+    font-family: "Caveat";
+}
+.closedParch {
+    position: relative;
+    width: 100%;
+}
+.openedBook {
+    position: relative;
+}
+.openedBook_image {
+    width: 100%;
+    height: 100%;
+}
+.sobreEla_para1 {
+    font-family: 'Caveat';
+    color: #000000;
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    font-size: 140%;
+    padding-right: 1em;
+}
+.sobreEla_para2 {
+    font-family: 'Caveat';
+    color: #000000;
+    position: absolute;
+    top: 7%;
+    left: 11%;
+    font-size: 150%;
+    padding-right: 1.2em;
+}
+.arrow {
+    position: absolute;
+    padding-left: 1500%;
+}
+button {
+    position: inherit; 
+    background: none;
+    outline: none;
+    border: none;
+}
+@media(max-width: 320px){
+    .arrow{
+        padding-top: 10em;
+        padding-left: 1000%;
+        position: absolute;
+    }
+}
